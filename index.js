@@ -1,3 +1,2 @@
-// @flow
-
-process.stdout.write('hello world\n');
+require('@babel/register');
+require('./src/index');

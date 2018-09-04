@@ -1,19 +1,28 @@
 {
-  "name": "other",
+  "name": "base",
   "version": "1.0.0",
-  "description": "",
+  "description": "A base repo",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "watch": "pm2 start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "flow-bin": "^0.80.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/register": "^7.0.0"
   }
 }
