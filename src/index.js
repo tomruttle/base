@@ -1,3 +1,7 @@
 // @flow
 
-process.stdout.write('hello world\n');
+export function getHelloWorld(): string {
+  return 'hello world';
+}
+
+process.stdout.write(`${getHelloWorld()}\n`);
